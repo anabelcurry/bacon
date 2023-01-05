@@ -7,27 +7,17 @@ setHeadlessWhen(process.env.HEADLESS);
 setCommonPlugins();
 
 export const config: CodeceptJS.MainConfig = {
-  tests: './tests',
+  tests: './tests/*',
   output: './output',
   helpers: {
-    WebDriver: {
-      url: 'https://myapp.com',
-      browser: 'chrome',
-      host: '127.0.0.1',
-      port: 4444,
-      restart: false,
-      windowSize: '1920x1680',
-      desiredCapabilities: {
-        chromeOptions: {
-          args: [ /*"--headless",*/ "--disable-gpu", "--no-sandbox" ]
-        }
-      }
-    },
     Playwright: {
       url: 'https://www.google.com',
       show: true,
       browser: 'chromium'
-    }
+    },
+    AssertWrapper: {
+      require: "codeceptjs-assert",
+    },
   },
   include: {
     I: './steps_file'
