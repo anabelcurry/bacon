@@ -1,6 +1,5 @@
 import googlePage from "../pages/googlePage";
 
-// eslint-disable-next-line no-undef
 const {I} = inject();
   
   export = {

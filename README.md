@@ -14,8 +14,8 @@ Assignment: In a language of your choice, please automate the following use case
 
 ### Getting Started
 
-Run `git clone https://github.com/anabelocurry/bacon.git && cd codeceptjs-examples && npm install`
-This will clone the repository, download codeceptjs, and install node package manager
+Run `git clone https://github.com/anabelocurry/bacon.git && cd bacon && npm install`
+This will clone the repository, download codeceptjs, navigate your terminal to the new repository folder and install node package manager locally
 
 ### Running Tests Locally
 
