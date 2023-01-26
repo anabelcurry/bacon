@@ -1,5 +1,3 @@
-const { I } = inject();
-
 export = {
     /* Landing page */
 
