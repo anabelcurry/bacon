@@ -19,9 +19,7 @@ export const config: CodeceptJS.MainConfig = {
       require: "codeceptjs-assert",
     },
   },
-  include: {
-    I: './steps_file'
-  },
+  include: {},
   name: 'codeceptjs.test.setup',
   fullPromiseBased: true
 }
